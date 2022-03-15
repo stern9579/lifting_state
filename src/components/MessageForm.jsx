@@ -4,7 +4,6 @@ import react, { useState } from 'react';
 const MessageForm = (props) => {
     const [msg, setMsg] = useState("");
 
-    // most of the component removed for brevity
     const handleSubmit = (e) => {
         e.preventDefault();
         props.onNewMessage(msg);
